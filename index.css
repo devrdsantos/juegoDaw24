@@ -1,0 +1,225 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    margin-top: 6rem;
+    width: 140px;
+    height: 140px;
+}
+
+.registro_logo {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    margin-top: 6rem;
+    width: 231px;
+    height: 160px;
+}
+
+.h1-puppyPop {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 1.4rem;
+
+}
+
+.login-p {
+    align-self: center;
+    width: 250px;
+}
+
+.user-h4 {
+    margin:0 50px 5px 50px;
+    
+}
+
+.login-usuario {
+    margin: 0 50px;
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 4px;
+    height: 28px;
+    margin-bottom: 10px;
+}
+
+.password-usuario {
+    margin:0 50px;
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 4px;
+    height: 28px;
+    margin-bottom: 10px;
+}
+
+.repeat-password-usuario {
+    margin:0 50px;
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 4px;
+    height: 28px;
+}
+
+.olvidaste{
+    margin: 10px 50px 30px 50px;
+    color: #FF5FBF;
+    font-weight: 400;
+}
+
+.login {
+    align-self: center;
+    background-color: #FF5FBF;
+    color: white;
+    padding: 8px 6px;
+    border: none;
+    border-radius: 4px;
+}
+
+.register {
+    align-self: center;
+    font-weight: 300;
+}
+
+.button-registrate {
+    color:#FF5FBF;
+    padding-left: 2px;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.registrarme {
+    align-self: center;
+    background-color: #FF5FBF;
+    color: white;
+    padding: 8px 6px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.iniciaSesion {
+    align-self: center;
+    font-weight: 300;
+}
+
+.button-iniciaSesion {
+    color:#FF5FBF;
+    padding-left: 2px;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+/* PAGINA MENU PRINCIPAL */
+
+.container-encabezado {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.span-title {
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: #333;
+    margin-left: 10px;
+}
+
+.botones-menuPrincipal {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.comenzarPartida {
+    width: 240px;
+    height: 38px;
+    background-color: #FF5FBF;
+    color: white;
+    border-radius: 4px;
+    border: 2px solid #FF5FBF;
+    font-size: 1rem;
+    font-weight: 600;
+    
+}
+
+.IrAlPerfil {
+    width: 240px;
+    height: 38px;
+    border: 2px solid #FF5FBF;
+    color: #FF5FBF;
+    font-weight: 500;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.VerRanking {
+    width: 240px;
+    height: 38px;
+    color: #FF5FBF;
+    border-radius: 4px;
+    background-color: white;
+    border: 2px solid #FF5FBF;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/* Pagina del juego */
+
+.container-encabezado-game {
+    background-color: #F5F5F5;
+    width: 327px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.puntuacion {
+    display:flex;
+    justify-content: space-between;
+    width: 327px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.game-window {
+    width: 327px;
+    height: 502px;
+    margin: 15px auto;
+    background-color: green;
+    
+}
+
+.game-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.game-buttons button {
+    width: 155px;
+    height: 38px;
+    color: #FF5FBF;
+    border-radius: 4px;
+    background-color: white;
+    border: 2px solid #FF5FBF;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
