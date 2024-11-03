@@ -10,24 +10,17 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="container-encabezado container-encabezado-game">
-      <img src="../assets/logo_menuPrincipal.png" alt="logo" />
-      <span class="span-title">Puppy Pop</span>
+  <body class="body-resultados">
+    
+    <div class="container-resultados">
+        <div><h4>¡Que veloz!</h4></div>
+        <div><h4>Tu puntaje ha sido de</h4></div>
+        <div>
+            <img src="../assets/estrella_puntaje.png" class="imagen_puntaje" alt="imagen_puntaje">
+            <span id="scoreDisplay">Puntaje</span>
+        </div>
+        <div><button class="IrAInicio" onclick="goToHome()">Ir a inicio</button></div>
     </div>
-
-    <div class="puntuacion">
-      <div id="time">Time:XX</div>
-      <div id="points">Puntuacion:XX</div>
-    </div>
-
-    <div class="game-window"></div>
-
-    <div class="game-buttons">
-      <button>Pausar</button>
-      <button>Finalizar</button>
-    </div>
-
-    <script src="../scripts/logic.js"></script>
+    <script src="../scripts/resultados.js"></script>
   </body>
 </html>
