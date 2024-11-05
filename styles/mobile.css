@@ -195,7 +195,8 @@ body {
   width: 327px;
   height: 502px;
   margin: 15px auto;
-  background-color: rgb(202, 228, 202);
+ /* background-color: rgb(202, 228, 202);*/
+  background-image: url(../assets/psycho2_gif.webp);
   position: relative;
   border: 2px solid black;
 }

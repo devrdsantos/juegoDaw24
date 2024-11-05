@@ -3,8 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const timeDisplay = document.getElementById('time');
     const scoreDisplay = document.getElementById('points');
     let score = 0;
-    let timeLeft = 60;
+    let timeLeft = 6;
     let interval;
+  
+    // Aquí se puede establecer el username del usuario que está jugando
+    // Asegúrate de que este valor se establezca en el momento del inicio de sesión
+    const username = sessionStorage.getItem('username') || 'Invitado'; // Cambia a un valor predeterminado si no hay
   
     // Verifica y actualiza el número de intentos en sessionStorage
     let attempts = sessionStorage.getItem('attempts');
@@ -20,16 +24,34 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         timeLeft--;
         timeDisplay.textContent = `Time: ${timeLeft}s`;
+        if (timeLeft === 5) {
+          gameWindow.style.backgroundImage = "url('../assets/psycho_gif.webp')";
+        }
+        generateImages();
+      }, 1000);
+    }
   
+    function generateImages() {
+      const imagePaths = [
+        '../assets/imagen_juego1.png',
+        '../assets/imagen_juego2.png',
+        '../assets/imagen_juego3.png',
+        '../assets/imagen_juego4.png'
+      ];
+  
+      const imageCount = Math.floor(Math.random() * 3) + 1;
+      for (let i = 0; i < imageCount; i++) {
         const image = document.createElement('img');
-        image.src = '../assets/imagen_juego.png'; // Ruta a tu imagen
+        const randomImage = imagePaths[Math.floor(Math.random() * imagePaths.length)];
+        image.src = randomImage;
+  
         image.classList.add('image');
         image.style.top = Math.random() * (gameWindow.clientHeight - 50) + 'px';
         image.style.left = Math.random() * (gameWindow.clientWidth - 50) + 'px';
   
         image.addEventListener('click', () => {
           score++;
-          scoreDisplay.textContent = `Puntuacion: ${score}`;
+          scoreDisplay.textContent = `Puntuación: ${score}`;
           image.remove();
         });
   
@@ -39,26 +61,71 @@ document.addEventListener('DOMContentLoaded', () => {
           if (image.parentNode) {
             image.remove();
           }
-        }, 1000 - timeLeft * 10); // Aumenta la velocidad al avanzar el tiempo
-      }, 1000);
+        }, Math.max(1000, 1000 - timeLeft * 10));
+      }
     }
   
     function endGame() {
-      // Guardar la puntuación actual en sessionStorage
-      sessionStorage.setItem('lastScore', score);
+        // Guardar la puntuación actual en sessionStorage
+        sessionStorage.setItem('lastScore', score);
+    
+        // Obtener la puntuación más alta actual
+        let highScore = localStorage.getItem('highScore');
+        highScore = highScore ? parseInt(highScore) : 0; // Asegurarse de que sea un número
+    
+        // Verificar y actualizar la puntuación máxima
+        if (score > highScore) {
+            localStorage.setItem('highScore', score);
+            updateUserHighScore(score); // Actualiza la puntuación máxima del usuario
+        }
+    
+        // Actualizar el array de juegos en sessionStorage
+        updateGameData(score);
+    
+        // Guardar la fecha y hora de juego
+        const currentDate = new Date();
+        sessionStorage.setItem('gameDate', currentDate.toLocaleString());
+    
+        // Redirigir a otra página al finalizar
+        window.location.href = 'resultados.html'; // Cambia por la URL de tu página de resultados
+    }
+    
+    function updateGameData(finalScore) {
+        // Obtener el nombre de usuario del sessionStorage
+        const username = sessionStorage.getItem('username');
+        // Obtener el array de juegos del sessionStorage
+        let games = JSON.parse(localStorage.getItem('games')) || [];
+    
+        // Buscar el último juego del usuario
+        const gameIndex = games.findIndex(game => game.username === username && game.score === 0);
+    
+        // Si se encuentra el juego, actualizar su puntaje y datetime
+        if (gameIndex !== -1) {
+            games[gameIndex].score = finalScore; // Actualiza el puntaje
+            games[gameIndex].datetime = new Date().toISOString(); // Actualiza la fecha y hora
+        }
+    
+        // Almacenar el array actualizado en sessionStorage
+        localStorage.setItem('games', JSON.stringify(games));
+    }
+    
   
-      // Verificar y actualizar la puntuación máxima en localStorage
-      let highScore = localStorage.getItem('highScore');
-      if (!highScore || score > parseInt(highScore)) {
-        localStorage.setItem('highScore', score);
+    function updateUserHighScore(username, newHighScore) {
+      // Obtener usuarios del localStorage
+      let users = JSON.parse(localStorage.getItem('users'));
+  
+      // Verificar que los usuarios existan
+      if (users) {
+        // Buscar el usuario que corresponde al username
+        const user = users.find(user => user.username === username);
+        if (user) {
+          // Actualizar la puntuación máxima del usuario encontrado
+          user.puntuacionMaxima = newHighScore;
+          // Guardar de nuevo el array de usuarios en localStorage
+          localStorage.setItem('users', JSON.stringify(users));
+          console.log("Puntuación máxima actualizada para el usuario:", username, user.puntuacionMaxima); // Para depuración
+        }
       }
-  
-      // Guardar la fecha y hora de juego
-      const currentDate = new Date();
-      sessionStorage.setItem('gameDate', currentDate.toLocaleString());
-  
-      // Redirigir a otra página al finalizar
-      window.location.href = 'resultados.html'; // Cambia por la URL de tu página de resultados
     }
   
     startGame();
