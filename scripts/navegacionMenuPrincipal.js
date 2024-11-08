@@ -10,3 +10,7 @@ document.getElementById("IrAlPerfil").onclick = function() {
 document.getElementById("VerRanking").onclick = function() {
     window.location.href = "#";
 };
+
+document.getElementById("cerrarSesion").onclick = function() {
+    window.location.href = "../pages/index.html";
+};
