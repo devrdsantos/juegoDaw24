@@ -1,6 +1,4 @@
-@media (max-width: 767px) {
-  
-  /*****************
+/*****************
   G E N E R A L E S
   *****************/
   body {
@@ -12,14 +10,20 @@
     font-style: normal;
   }
 
-  .logo {
-    margin: 0;
-    padding: 0;
-    align-self: center;
-    margin-top: 6rem;
-    width: 140px;
-    height: 140px;
-  }
+
+@media (max-width: 767px) {
+  
+  
+  
+
+ 
+
+ 
+
+
+
+
+
 
   .registro_logo {
     margin: 0;
@@ -30,18 +34,10 @@
     height: 160px;
   }
 
-  .h1-puppyPop {
-    align-self: center;
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
-    font-size: 1.4rem;
-  }
 
-  .login-p {
-    align-self: center;
-    width: 250px;
-  }
+  
+
+  
 
   .user-h4 {
     margin: 0 50px 5px 50px;

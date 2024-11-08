@@ -1,0 +1,65 @@
+    /*💟*/
+/***********
+    Imagen 
+***********/
+.logo-grande {
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  margin-top: 6rem;
+}
+
+.logo-grande img {
+  width: 140px;
+  height: auto;
+}
+
+/* [Query] TABLET & DESKTOP  */
+@media (min-width: 768px) {
+  .logo-grande img {
+    width: 220px; /* Tamaño para tablets */
+  }
+}
+
+    /*💟*/
+/**************
+  M e n s a j e 
+*************/
+
+.login-p {
+  width: 480px;
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/* [Query] MOBILE */
+@media (max-width: 768px) {
+  .login-p {
+    align-self: center;
+    width: 260px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+    /*💟*/
+/**************
+  T i t u l o
+*************/
+.h1-puppyPop {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 12px;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+/* [Query] MOBILE */
+@media (max-width: 768px) {
+    .h1-puppyPop {
+        font-size: 1.4rem;
+      }
+}
