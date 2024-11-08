@@ -1,0 +1,25 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*****************
+  G E N E R A L E S
+  *****************/
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  /***************
+    I N I C I O
+  ****************/
+  .logo {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    margin-top: 6rem;
+    width: 140px;
+    height: 140px;
+  }
+}
