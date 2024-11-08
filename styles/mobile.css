@@ -8,6 +8,7 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    color: #333;
   }
 
 
@@ -25,98 +26,17 @@
 
 
 
-  .registro_logo {
-    margin: 0;
-    padding: 0;
-    align-self: center;
-    margin-top: 6rem;
-    width: 231px;
-    height: 160px;
-  }
 
 
   
 
   
 
-  .user-h4 {
-    margin: 0 50px 5px 50px;
-  }
 
-  .login-usuario {
-    margin: 0 50px;
-    border: none;
-    background-color: #f6f6f6;
-    border-radius: 4px;
-    height: 28px;
-    margin-bottom: 10px;
-  }
 
-  .password-usuario {
-    margin: 0 50px;
-    border: none;
-    background-color: #f6f6f6;
-    border-radius: 4px;
-    height: 28px;
-    margin-bottom: 10px;
-  }
+ 
 
-  .repeat-password-usuario {
-    margin: 0 50px;
-    border: none;
-    background-color: #f6f6f6;
-    border-radius: 4px;
-    height: 28px;
-  }
 
-  .olvidaste {
-    margin: 10px 50px 30px 50px;
-    color: #ff5fbf;
-    font-weight: 400;
-  }
-
-  .login {
-    align-self: center;
-    background-color: #ff5fbf;
-    color: white;
-    padding: 8px 6px;
-    border: none;
-    border-radius: 4px;
-  }
-
-  .register {
-    align-self: center;
-    font-weight: 300;
-  }
-
-  .button-registrate {
-    color: #ff5fbf;
-    padding-left: 2px;
-    text-decoration: underline;
-    font-weight: 400;
-  }
-
-  .registrarme {
-    align-self: center;
-    background-color: #ff5fbf;
-    color: white;
-    padding: 8px 6px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 30px;
-  }
-
-  .iniciaSesion {
-    align-self: center;
-    font-weight: 300;
-  }
-
-  .button-iniciaSesion {
-    color: #ff5fbf;
-    padding-left: 2px;
-    text-decoration: underline;
-    font-weight: 400;
-  }
 
   /* PAGINA MENU PRINCIPAL */
 

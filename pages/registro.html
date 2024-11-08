@@ -5,34 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Puppy Pop</title>
     <link rel="stylesheet" href="../styles/mobile.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/registro.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="registro_logo"><img src="../assets/logo_registro.png" alt="logo"></div>
-    <h1 class="h1-puppyPop">Regístrate en Puppy Pop</h1>
+    <!--LOGO-->
+    <div class="registro_logo"></div>
+    <!--TITULO-->
+    <h1 class="h1-puppyPop">
+      Regístrate en <span class="color">Puppy Pop</span>
+    </h1>
+    <!--MENSAJE-->
     <p class="login-p">
       ¡Pon a prueba tus reflejos con los perritos más lindos de la web!
     </p>
-    
-    <!-- Formulario de registro -->
-    <h4 class="user-h4">Usuario:</h4>
-    <input type="text" id="username" class="login-usuario" />
-    
-    <h4 class="user-h4">Contraseña:</h4>
-    <input type="password" id="password" class="password-usuario" />
-    
-    <h4 class="user-h4">Repite la contraseña:</h4>
-    <input type="password" id="repeatPassword" class="repeat-password-usuario" />
-    
+
+    <div class="form">
+      <!-- LBL USUARIO -->
+      <h4 class="user-h4">Usuario:</h4>
+      <!-- INPUT USUARIO -->
+      <input type="text" id="username" class="login-usuario" />
+      <!-- LBL CONTRASEÑA -->
+      <h4 class="user-h4">Contraseña:</h4>
+      <!-- INPUT CONTRASEÑA -->
+      <input type="password" id="password" class="password-usuario" />
+      <!-- LBL REPETIR -->
+      <h4 class="user-h4">Repite la contraseña:</h4>
+      <!-- INPUT REPETIR -->
+      <input
+        type="password"
+        id="repeatPassword"
+        class="repeat-password-usuario"
+      />
+    </div>
+
+    <!-- BTN REGISTRO -->
     <button id="registerButton" class="registrarme">Registrarme</button>
-    
+
     <h5 class="iniciaSesion">
       <span class="yaTienesCuenta">¿Ya tienes cuenta?</span>
-      <a href="../pages/index.html" class="button-iniciaSesion">Inicia Sesión</a>
+      <a href="../pages/index.html" class="button-iniciaSesion"
+        >Inicia Sesión</a
+      >
     </h5>
-    
-    <script src="../scripts/registro.js"></script> <!-- Archivo JavaScript -->
+
+    <script src="../scripts/registro.js"></script>
+    <!-- Archivo JavaScript -->
   </body>
 </html>
