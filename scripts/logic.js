@@ -75,16 +75,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
         // Verificar y actualizar la puntuación máxima
         if (score > highScore) {
-            localStorage.setItem('highScore', score);
             updateUserHighScore(score); // Actualiza la puntuación máxima del usuario
         }
     
-        // Actualizar el array de juegos en sessionStorage
+        // Actualizar el array de juegos en localStorage
         updateGameData(score);
-    
-        // Guardar la fecha y hora de juego
-        const currentDate = new Date();
-        sessionStorage.setItem('gameDate', currentDate.toLocaleString());
     
         // Redirigir a otra página al finalizar
         window.location.href = 'resultados.html'; // Cambia por la URL de tu página de resultados

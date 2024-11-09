@@ -8,5 +8,9 @@ document.getElementById("IrAlPerfil").onclick = function() {
 };
 
 document.getElementById("VerRanking").onclick = function() {
-    window.location.href = "#";
+    window.location.href = "../pages/ranking.html";
+};
+
+document.getElementById("cerrarSesion").onclick = function() {
+    window.location.href = "../pages/index.html";
 };

@@ -39,7 +39,6 @@ function registerUser() {
     username: username,
     password: password,
     profileImage: "",
-    puntuacionMaxima: 0,
   };
 
   // Obtener el array de usuarios de localStorage (o crear uno vacío si no existe)
@@ -67,7 +66,3 @@ function registerUser() {
 
 // Agregar evento al botón de registro
 registerButton.addEventListener("click", registerUser);
-
-// Mostrar el contenido de localStorage en la consola
-
-console.log(localStorage);
