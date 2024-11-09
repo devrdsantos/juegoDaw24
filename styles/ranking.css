@@ -1,0 +1,147 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;   
+}
+/* [Query] MOBILE */
+@media (max-width: 768px) {
+    body{
+       
+        padding: 16px;   
+    }
+}
+
+/**************💟 ***************
+*******  Contenedor PPAL ********
+********************************/
+.container{
+    width:47%;
+}
+/* [Query] MOBILE */
+@media (max-width: 768px) {
+    .container{
+        width:100%;
+    }
+}
+
+/**************💟 ***************
+*******  BTN IR ATRAS  **********
+********************************/
+.atras{
+    
+    display: flex;
+    font-size: 16px;
+    color: #FF2DAB;
+    text-decoration: none;
+    font-weight: 500;
+    gap: 4px;
+}
+
+
+/**************💟 ***************
+*********  ENCABEZADO  ***********
+*********************************/
+.encabezado{
+   background: #fff;
+   margin-bottom: 16px;
+   
+}
+/* {🌞} Imagen  */
+.encabezado img {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: url('../assets/encabezado-ranking-g.png');
+}
+/* [Query] MOBILE */
+@media (max-width: 768px) {
+    .encabezado img {
+        display: flex;
+    align-items: center;
+    content: url('../assets/encabezado-ranking-m.png');
+    }
+}
+
+/* {🌞} Titulo  */
+h1{
+    font-weight: 800;
+    text-align: center;
+    background-color: #F8D9E8;
+    color: #FF2DAB;
+    margin:0;
+    padding: 4px 4px 16px 4px;
+    font-size: 1.8rem;
+}
+@media (max-width: 768px) {
+    h1{
+        font-size: 1.4rem;
+    
+    }
+}
+
+/**************💟 ***************
+*******  CONT. USUARIO  **********
+*********************************/
+.usuario{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+/* {🌞} Sub-contenedor  */
+.sub-cont-usuario{
+    
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+/* [Query] MOBILE */
+@media (max-width: 768px) {
+    .sub-cont-usuario {
+        gap: 6px;
+        
+    }
+}
+/* {🌞} IMG usuario  */
+/* [Query] MOBILE */
+@media (max-width: 768px) {
+    .sub-cont-usuario img{
+        content: url('../assets/paw.png');
+        
+    }
+}
+
+/* {🌞} Nombre usuario  */
+.usuario a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #222;
+}
+@media (max-width: 768px) {
+    .usuario a {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+/* {🌞} XP usuario  */
+.usuario p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #FF2DAB;
+}
+@media (max-width: 768px) {
+    .usuario p {
+        font-size: 16px;
+   
+    }
+}
+
+
