@@ -13,3 +13,4 @@
  console.log(sessionStorage);
  let users = JSON.parse(localStorage.getItem('users'));
  console.log("Puntuación máxima actualizada:", users[0].puntuacionMaxima);
+
