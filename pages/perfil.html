@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Puppy Pop</title>
+    <link rel="stylesheet" href="../styles/mobile.css" />
     <link rel="stylesheet" href="../styles/perfil.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,20 +18,22 @@
         ><img src="../assets/chevron-20.png" alt="ir atrás <" /> Ir atras</a
       >
 
-    <div>
+    <div class="img-perfil">
       <img src="../assets/paw.png" id="profileImage" alt="Imagen de perfil">
-      <button id="editImage"><img src="../assets/pencil.png" alt="lapiz de editar"></button>
+      <button id="editImage" class="lapiz"><img src="../assets/pencil.png" alt="lapiz de editar"></button>
       <input type="file" id="fileInput" accept="image/*" style="display: none;">
     </div>
 
-    <div>
-        <label for="user">Nombre de usuario:</label><br>
-        <input type="text" id="usernameInput"> <br>
+    <div class="form">
+      <h1 class="titulo">Datos personales</h1>
+        <label for="user" class="label-login">Nombre de usuario:<br><input type="text" id="usernameInput" class="input-login" disabled> <br></label>
+        
 
-        <label for="password">Contraseña:</label><br>
-        <input type="password" id="passwordInput"> <br>
+        <label for="password" class="label-login">Contraseña:<br><input type="password" id="passwordInput" class="input-login"> <br></label>
+        <label for="password" class="label-login">Repetir contraseña:<br><input type="password" id="passwordRepeatInput" class="input-login"> <br></label>
+        
 
-        <button id="saveButton">Guardar</button>
+        <button id="saveButton" class="btn-login">Guardar</button>
     </div>
 
    <script src="../scripts/perfil.js"></script>

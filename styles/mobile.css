@@ -36,24 +36,6 @@
     height: 50px;
   }
 
-  .game-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
 
-  .game-buttons button {
-    width: 155px;
-    height: 38px;
-    color: #ff5fbf;
-    border-radius: 4px;
-    background-color: white;
-    border: 2px solid #ff5fbf;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 
 }

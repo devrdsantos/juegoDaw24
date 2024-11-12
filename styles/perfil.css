@@ -1,5 +1,132 @@
-#profileImage {
-    max-width: 100px;
-}
+body {
+    width: 480px;
+    margin: 0 auto;
+  }
+  /* [Query] TABLET & DESKTOP  */
+  @media (max-width: 768px) {
+    body {
+      width: 320px;
+    }
+  }
 
 
+
+.atras {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #ff2dab;
+    text-decoration: none;
+    font-weight: 500;
+    gap: 4px;
+  }
+
+  .form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form input {
+    width: 100%;
+  }
+
+  .img-perfil{
+    margin-top: 64px;
+    position: relative; 
+  }
+
+  .img-perfil #profileImage{
+    width: 160px;
+    height: 160px;
+    border-radius: 1000px;
+  }/* [Query] TABLET & DESKTOP  */
+  @media (max-width: 768px) {
+    .img-perfil #profileImage {
+        width: 92px;
+        height: 92px;
+    }
+  }
+
+  .lapiz{
+    background-color: #F8D9E8;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 1000px;
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    transform: translate(-10%, 20%);
+    cursor: pointer;
+  }
+
+  .titulo{
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }@media (max-width: 768px){
+    .titulo{
+        margin-bottom: 28px;
+    }
+  }
+
+  .label-login {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  @media (max-width: 768px) {
+    .label-login{
+      font-size: 16px;
+    }
+    }
+
+    
+.input-login {
+    font-size: 16px;
+    padding: 10px 14px;
+    border: none;
+    background-color: #f6f6f6;
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    width: 94%;
+  }
+  /* [Query] MOBILE */
+  @media (max-width: 768px) {
+    .input-login{
+      font-size: 14px;
+      padding: 8px 12px;
+    }}
+
+    input:focus {
+        background-color: #fde4f3;
+        outline: solid 0.8px #ff2dab;
+        color: #ff2dab;
+      }
+
+      input:disabled{
+        background-color: #b2b2b2;
+        color: #3d3d3d;
+      }
+
+      /* BTN >>>> */
+.btn-login {
+    align-self: center;
+    background-color: #ff5fbf;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 24px;
+  }
+  /* [Query] MOBILE */
+  @media (max-width: 768px) {
+    .btn-login {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }

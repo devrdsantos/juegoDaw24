@@ -40,6 +40,7 @@ saveButton.addEventListener('click', () => {
     // Validaciones
     const username = usernameInput.value.trim();
     const password = passwordInput.value;
+    const passwordRepeat = passwordRepeatInput.value;
 
     // Validar username
     if (username.length < 4) {
@@ -59,6 +60,12 @@ saveButton.addEventListener('click', () => {
         return;
     }
 
+    // Validar que las contraseñas coinciden
+    if (password !== passwordRepeat) {
+        alert("Las contraseñas no coinciden.");
+        return;
+    }
+
     // Actualizar `username` y `password` con los valores de los inputs
     currentUser.username = username;
     currentUser.password = password;
@@ -67,6 +74,7 @@ saveButton.addEventListener('click', () => {
     localStorage.setItem('users', JSON.stringify(users));
     alert('¡Datos actualizados con éxito!');
 });
+
 
 // Paso 6: Activar el selector de archivo al hacer clic en el botón de edición de imagen
 document.getElementById('editImage').addEventListener('click', () => {
