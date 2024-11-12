@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const timeDisplay = document.getElementById('time');
     const scoreDisplay = document.getElementById('points');
     let score = 0;
-    let timeLeft = 6;
+    let timeLeft = 60;
     let interval;
   
     // Aquí se puede establecer el username del usuario que está jugando
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         timeLeft--;
         timeDisplay.textContent = `Time: ${timeLeft}s`;
-        if (timeLeft === 5) {
+        if (timeLeft === 2) {
           gameWindow.style.backgroundImage = "url('../assets/psycho_gif.webp')";
         }
         generateImages();

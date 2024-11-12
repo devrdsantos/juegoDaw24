@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Puppy Pop</title>
-    <link rel="stylesheet" href="../styles/mobile.css" />
+    <link rel="stylesheet" href="../styles/perfil.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,16 +13,26 @@
     />
   </head>
   <body>
+    <a href="menuPrincipal.html" class="atras"
+        ><img src="../assets/chevron-20.png" alt="ir atrás <" /> Ir atras</a
+      >
+
     <div>
-      <img src="" alt="menor que <">
-      <span>Ir atras</span>
+      <img src="../assets/paw.png" id="profileImage" alt="Imagen de perfil">
+      <button id="editImage"><img src="../assets/pencil.png" alt="lapiz de editar"></button>
+      <input type="file" id="fileInput" accept="image/*" style="display: none;">
     </div>
 
     <div>
-      <img src="../assets/paw.png" alt="Imagen de perfil">
-      <button><img src="" alt="lapiz de editar"></button>
+        <label for="user">Nombre de usuario:</label><br>
+        <input type="text" id="usernameInput"> <br>
+
+        <label for="password">Contraseña:</label><br>
+        <input type="password" id="passwordInput"> <br>
+
+        <button id="saveButton">Guardar</button>
     </div>
 
-   
+   <script src="../scripts/perfil.js"></script>
   </body>
 </html>

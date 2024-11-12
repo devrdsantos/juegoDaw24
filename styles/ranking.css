@@ -5,6 +5,10 @@ body{
     justify-content: center;
     padding: 40px;   
 }
+
+.profileImage {
+    max-width: 65px;
+}
 /* [Query] MOBILE */
 @media (max-width: 768px) {
     body{
@@ -112,7 +116,7 @@ h1{
 /* [Query] MOBILE */
 @media (max-width: 768px) {
     .sub-cont-usuario img{
-        content: url('../assets/paw.png');
+      /*  content: url('../assets/paw.png');  */
         
     }
 }

@@ -13,9 +13,7 @@
  console.log(sessionStorage);
  let users = JSON.parse(localStorage.getItem('users'));
 
- // Borrar todos los datos del sessionStorage y el localStorage
- //localStorage.clear();
- //sessionStorage.clear();
+
 
 // Recupera y parsea el array 'games' desde el localStorage
 const games = JSON.parse(localStorage.getItem('games'));
@@ -32,3 +30,6 @@ games.forEach(game => {
 
 console.log("El puntaje mayor es:", maxScore);
 
+ // Borrar todos los datos del sessionStorage y el localStorage
+ //localStorage.clear();
+ //sessionStorage.clear();
