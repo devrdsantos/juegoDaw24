@@ -25,23 +25,9 @@
     margin-top: 30px;
   }
 
-  .puntuacion {
-    display: flex;
-    justify-content: space-between;
-    width: 327px;
-    margin: 0 auto;
-    margin-top: 15px;
-  }
+ 
 
-  .game-window {
-    width: 327px;
-    height: 502px;
-    margin: 15px auto;
-    /* background-color: rgb(202, 228, 202);*/
-    background-image: url(../assets/psycho2_gif.webp);
-    position: relative;
-    border: 2px solid black;
-  }
+  
 
   .image {
     position: absolute;

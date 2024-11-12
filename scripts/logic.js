@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
         image.src = randomImage;
   
         image.classList.add('image');
-        image.style.top = Math.random() * (gameWindow.clientHeight - 50) + 'px';
-        image.style.left = Math.random() * (gameWindow.clientWidth - 50) + 'px';
+        image.style.top = Math.random() * (gameWindow.clientHeight - 100) + 'px';
+        image.style.left = Math.random() * (gameWindow.clientWidth - 100) + 'px';
   
         image.addEventListener('click', () => {
           score++;
