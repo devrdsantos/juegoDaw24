@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Puppy Pop</title>
-    
-    
+
     <link rel="stylesheet" href="../styles/mobile.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,9 +15,10 @@
     />
   </head>
   <body>
-    
     <!--LOGO-->
-    <div class="logo-grande"><img src="../assets/logo-grande.png" alt="logo" /></div>
+    <div class="logo-grande">
+      <img src="../assets/logo-grande.png" alt="logo" />
+    </div>
     <!--TITULO-->
     <h1 class="h1-puppyPop">Puppy Pop</h1>
     <!--MENSAJE-->
@@ -27,27 +27,64 @@
       de perros que aparecen y desaparecen en pantalla para ganar puntos
     </p>
 
+    <!--FORMULARIO LOGIN-->
+    <form action="">
+      <!--USUARIO-->
+      <label for="usuario" class="label-login">
+        Usuario:
+        <br />
+        <input type="text" name="usuario" id="usuario" class="input-login" />
+      </label>
+      <br />
 
-    <!--LBL USUARIO-->
+      <!--CONTRASEÑA-->
+      <label for="password" class="label-login">
+        Contraseña:
+        <br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="input-login"
+        />
+      </label>
+      <br />
+
+      <!--TXT ¿OLVIDASTE?-->
+      <a class="olvidaste" href="#">¿Olvidaste tu contraseña?</a>
+      <br />
+
+      <!--BTN INGRESAR-->
+      <input type="submit" value="Iniciar sesión" class="btn-login" />
+
+      <!--INPUT CONTRASEÑA-->
+      <div class="register">
+        <span class="aunNoTienesCuenta">¿Aún no tienes cuenta?</span>
+        <a href="registro.html" class="button-registrate">Regístrate</a>
+      </div>
+    </form>
+
+    <!--
+    
     <h4 class="user-h4">Usuario:</h4>
-    <!--INPUT USUARIO-->
+    
     <input type="text" class="login-usuario" />
-    <!--LBL CONTRASEÑA-->
+    
     <h4 class="user-h4">Contraseña:</h4>
-    <!--INPUT CONTRASEÑA-->
+    
     <input type="password" class="password-usuario" />
-    <!--TXT ¿OLVIDASTE?-->
-    <a class="olvidaste">¿Olvidaste tu contraseña?</a>
+   
+    <a class="olvidaste" href="#">¿Olvidaste tu contraseña?</a>
 
-    <!--BTN INGRESAR-->
+   
     <button class="login">Iniciar sesión</button>
 
-    <!--INPUT CONTRASEÑA-->
+   
     <h5 class="register">
       <span class="aunNoTienesCuenta">¿Aún no tienes cuenta?</span>
       <a href="registro.html" class="button-registrate">Regístrate</a>
     </h5>
-
+  -->
     <!-- Enlace al archivo JavaScript -->
     <script src="../scripts/login.js"></script>
   </body>

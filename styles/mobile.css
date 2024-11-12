@@ -9,6 +9,8 @@
     font-weight: 300;
     font-style: normal;
     color: #333;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
   }
 
 
