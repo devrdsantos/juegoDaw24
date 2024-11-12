@@ -21,15 +21,15 @@ Formularios <<<<<<<<<<<<<<<<<
   }
 }
 
-form {
+.form {
   width: 480px;
   display: flex;
   flex-direction: column;
 }
 /* [Query] MOBILE */
 @media (max-width: 768px) {
-  form {
-    width: 340px;
+  .form {
+    width: 280px;
   }
 }
 
@@ -47,7 +47,7 @@ input:focus {
   border-radius: 4px;
   margin-top: 8px;
   margin-bottom: 16px;
-  width: 100%;
+  width: 94%;
 }
 /* [Query] MOBILE */
 @media (max-width: 768px) {

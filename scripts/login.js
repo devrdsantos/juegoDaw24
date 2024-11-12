@@ -1,7 +1,7 @@
 // Seleccionar elementos del DOM
-const loginButton = document.querySelector(".login");
-const usernameInput = document.querySelector(".login-usuario");
-const passwordInput = document.querySelector(".password-usuario");
+const loginButton = document.querySelector(".btn-login");
+const usernameInput = document.querySelector(".user");
+const passwordInput = document.querySelector(".pswd");
 
 // Función para iniciar sesión
 function loginUser() {
@@ -16,7 +16,7 @@ function loginUser() {
 
   // Obtener el array de usuarios almacenado en localStorage
   const users = JSON.parse(localStorage.getItem("users")) || [];
-  //console.log("Usuarios cargados:", users); // Depuración
+  console.log("Usuarios cargados:", users); // Depuración
 
   // Buscar un usuario que coincida con el nombre de usuario y la contraseña
   const validUser = users.find(user => user.username === username && user.password === password);
@@ -24,7 +24,7 @@ function loginUser() {
   // Validar si el usuario existe y la contraseña es correcta
   if (validUser) {
     alert("Inicio de sesión exitoso.");
-    //console.log("Nombre de usuario guardado:", validUser.username); // Depuración
+    console.log("Nombre de usuario guardado:", validUser.username); // Depuración
     
     // Guardar el nombre de usuario en sessionStorage
     sessionStorage.setItem('username', validUser.username);

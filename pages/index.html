@@ -28,24 +28,24 @@
     </p>
 
     <!--FORMULARIO LOGIN-->
-    <form action="">
+    <div class="form">
       <!--USUARIO-->
-      <label for="usuario" class="label-login">
+      <label class="label-login">
         Usuario:
         <br />
-        <input type="text" name="usuario" id="usuario" class="input-login" />
+        <input type="text" id="usuario" class="input-login user" />
       </label>
       <br />
 
       <!--CONTRASEÑA-->
-      <label for="password" class="label-login">
+      <label class="label-login">
         Contraseña:
         <br />
         <input
           type="password"
-          name="password"
+         
           id="password"
-          class="input-login"
+          class="input-login pswd"
         />
       </label>
       <br />
@@ -55,14 +55,15 @@
       <br />
 
       <!--BTN INGRESAR-->
-      <input type="submit" value="Iniciar sesión" class="btn-login" />
+      <button class="btn-login">Iniciar sesion</button>
+      <!-- <input type="submit" value="Iniciar sesión"  /> -->
 
       <!--INPUT CONTRASEÑA-->
       <div class="register">
         <span class="aunNoTienesCuenta">¿Aún no tienes cuenta?</span>
         <a href="registro.html" class="button-registrate">Regístrate</a>
       </div>
-    </form>
+    </div>
 
     <!--
     

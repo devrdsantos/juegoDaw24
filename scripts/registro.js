@@ -1,8 +1,8 @@
 // Seleccionar elementos del DOM
 const registerButton = document.getElementById("registerButton");
-const usernameInput = document.getElementById("username");
+const usernameInput = document.getElementById("usuario");
 const passwordInput = document.getElementById("password");
-const repeatPasswordInput = document.getElementById("repeatPassword");
+const repeatPasswordInput = document.getElementById("repeat-password");
 
 // Función para registrar usuario
 function registerUser() {

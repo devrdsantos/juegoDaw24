@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,16 +10,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jacquarda+Bastarda+9&family=Kay+Pho+Du:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
     <!--LOGO-->
     <div class="registro_logo"></div>
     <!--TITULO-->
     <h1 class="h1-puppyPop">
-      Regístrate en <span class="color">Puppy Pop</span>
+      ¡Regístrate en <span class="color">Puppy Pop</span>!
     </h1>
     <!--MENSAJE-->
     <p class="login-p">
@@ -26,33 +28,69 @@
     </p>
 
     <div class="form">
-      <!-- LBL USUARIO -->
+      <!--USUARIO-->
+      <label class="label-login">
+        Usuario:
+        <br />
+        <input type="text" id="usuario" class="input-login user" />
+      </label>
+      <br />
+      
+      <!--CONTRASEÑA-->
+      <label class="label-login">
+        Contraseña:
+        <br />
+        <input
+          type="password"
+          id="password"
+          class="input-login pswd"
+        />
+        <br />
+      </label>
+      <br>
+        <!--REPETIR CONTRASEÑA-->
+      <label class="label-login">
+        Repetir contraseña:
+        <br />
+        <input
+          type="password"
+          id="repeat-password"
+          class="input-login pswd"
+        />
+        <br />
+</label>
+
+        <!--
       <h4 class="user-h4">Usuario:</h4>
-      <!-- INPUT USUARIO -->
+      
       <input type="text" id="username" class="login-usuario" />
-      <!-- LBL CONTRASEÑA -->
+      
       <h4 class="user-h4">Contraseña:</h4>
-      <!-- INPUT CONTRASEÑA -->
+      
       <input type="password" id="password" class="password-usuario" />
-      <!-- LBL REPETIR -->
+      
       <h4 class="user-h4">Repite la contraseña:</h4>
-      <!-- INPUT REPETIR -->
+      
       <input
         type="password"
         id="repeatPassword"
         class="repeat-password-usuario"
       />
-    </div>
-
-    <!-- BTN REGISTRO -->
+-->
+      <!-- BTN REGISTRO -->
     <button id="registerButton" class="registrarme">Registrarme</button>
 
-    <h5 class="iniciaSesion">
+    
+    <div class="iniciaSesion">
       <span class="yaTienesCuenta">¿Ya tienes cuenta?</span>
       <a href="../pages/index.html" class="button-iniciaSesion"
         >Inicia Sesión</a
       >
-    </h5>
+    </div>
+    </div>
+
+    
+
 
     <script src="../scripts/registro.js"></script>
     <!-- Archivo JavaScript -->

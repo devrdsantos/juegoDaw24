@@ -1,3 +1,52 @@
+
+.form {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* [Query] MOBILE */
+@media (max-width: 768px) {
+  .form {
+    width: 320px;
+  }
+}
+label{
+  width: 94%;
+}
+
+.label-login {
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .label-login{
+    font-size: 16px;
+  }
+  }
+input:focus {
+  background-color: #fde4f3;
+  outline: solid 0.8px #ff2dab;
+  color: #ff2dab;
+}
+
+.input-login {
+  font-size: 16px;
+  padding: 10px 14px;
+  border: none;
+  background-color: #f6f6f6;
+  border-radius: 4px;
+  margin-top: 8px;
+  width: 100%;
+}
+/* [Query] MOBILE */
+@media (max-width: 768px) {
+  .input-login {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
 /*💟*/
 /**************
   M e n s a j e 
@@ -55,7 +104,7 @@
   align-self: center;
   margin-top: 4rem;
 
-  width: 560px;
+  width: 480px;
   height: 244px;
   background-size: cover;
   background-position: center;
@@ -76,19 +125,8 @@
  Form & I n p u t s
 *************/
 
-.form {
-  margin: 0 auto;
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-}
 
-/* [Query] MOBILE */
-@media (max-width: 768px) {
-  .form {
-    width: 320px;
-  }
-}
+
 
 .user-h4 {
   margin: 8px;
@@ -128,7 +166,7 @@
 }
 
 .password-usuario {
-    margin: 0 auto;
+  margin: 0 auto;
   width: 90%;
   padding: 6px 12px;
   border: none;
@@ -147,8 +185,8 @@
 }
 
 .repeat-password-usuario {
-    margin: 0 auto;
-    width: 90%;
+  margin: 0 auto;
+  width: 90%;
   padding: 6px 12px;
   border: none;
   background-color: #f6f6f6;
@@ -170,7 +208,6 @@
   B o t ó n
 ******************/
 .registrarme {
-  align-self: center;
   background-color: #ff5fbf;
   color: white;
   padding: 12px 20px;
@@ -194,7 +231,8 @@
 **************************/
 
 .iniciaSesion {
-  align-self: center;
+  text-align: center;
+  margin-top: 16px;
   font-weight: 500;
   font-size: 16px;
 }
