@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const gameWindow = document.querySelector('.game-window');
     const timeDisplay = document.getElementById('time');
     const scoreDisplay = document.getElementById('points');
+    const intentos = document.getElementById('intentos');
     let score = 0;
     let timeLeft = 60;
     let interval;
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         timeLeft--;
         timeDisplay.textContent = `Time: ${timeLeft}s`;
-        if (timeLeft === 2) {
+        if (timeLeft === 15) {
           gameWindow.style.backgroundImage = "url('../assets/psycho_gif.webp')";
         }
         generateImages();
@@ -125,4 +126,16 @@ document.addEventListener('DOMContentLoaded', () => {
   
     startGame();
   });
+
+  // Recupera el valor de attempts desde sessionStorage
+let attempts = sessionStorage.getItem('attempts');
+
+// Verifica si attempts existe y es válido
+if (attempts !== null) {
+  intentos.textContent = `Intentos: ${attempts}`;
+} else {
+  // Si no hay un valor almacenado en sessionStorage, maneja el caso de manera apropiada
+  intentos.textContent = 'Intentos: 0';
+}
+
   

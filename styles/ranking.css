@@ -1,9 +1,23 @@
+.atras {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #ff2dab;
+    text-decoration: none;
+    font-weight: 500;
+    gap: 4px;
+
+  }
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px;   
+    width: 630px;
+    margin: 0 auto; 
 }
 
 .profileImage {
@@ -12,35 +26,11 @@ body{
 /* [Query] MOBILE */
 @media (max-width: 768px) {
     body{
-       
+        width: 327px;
         padding: 16px;   
     }
 }
 
-/**************💟 ***************
-*******  Contenedor PPAL ********
-********************************/
-.container{
-    width:47%;
-}
-/* [Query] MOBILE */
-@media (max-width: 768px) {
-    .container{
-        width:100%;
-    }
-}
-
-/**************💟 ***************
-*******  BTN IR ATRAS  **********
-********************************/
-.atras{
-    display: flex;
-    font-size: 16px;
-    color: #FF2DAB;
-    text-decoration: none;
-    font-weight: 500;
-    gap: 4px;
-}
 
 
 /**************💟 ***************
@@ -147,4 +137,36 @@ h1{
     }
 }
 
-
+   /* BTN >>>> */
+   .btn-login {
+    align-self: center;
+    background-color: #ff5fbf;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 40PX;
+  }
+  /* [Query] MOBILE */
+  @media (max-width: 768px) {
+    .btn-login {
+      padding: 8px 16px;
+      font-size: 12px;
+    }}
+    footer{
+        color: black;
+        width: 100%;
+        text-align: center;
+        background-color: #F8D9E8;
+        font-weight: 400;
+        position: fixed;
+        padding: 12px;
+        bottom: 0px;
+        
+      }
+      .corazon{
+        color:#ff2dab ;
+      }

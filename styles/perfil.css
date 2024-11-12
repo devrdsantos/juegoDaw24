@@ -130,3 +130,18 @@ body {
       font-size: 12px;
     }
   }
+
+  footer{
+    color: black;
+    width: 100%;
+    text-align: center;
+    background-color: #F8D9E8;
+    font-weight: 400;
+    position: fixed;
+    padding: 12px;
+    bottom: 0px;
+    
+  }
+  .corazon{
+    color:#ff2dab ;
+  }

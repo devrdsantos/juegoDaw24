@@ -16,10 +16,17 @@ function loginUser() {
 
   // Obtener el array de usuarios almacenado en localStorage
   const users = JSON.parse(localStorage.getItem("users")) || [];
-  console.log("Usuarios cargados:", users); // Depuración
+  //console.log("Usuarios cargados:", users); // Depuración
 
   // Buscar un usuario que coincida con el nombre de usuario y la contraseña
-  const validUser = users.find(user => user.username === username && user.password === password);
+  let validUser = null;
+
+for (let i = 0; i < users.length; i++) {
+  if (users[i].username === username && users[i].password === password) {
+    validUser = users[i];
+    break;
+  }
+}
 
   // Validar si el usuario existe y la contraseña es correcta
   if (validUser) {

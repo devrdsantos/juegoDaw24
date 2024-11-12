@@ -28,8 +28,9 @@ games.forEach(game => {
     }
 });
 
-console.log("El puntaje mayor es:", maxScore);
 
  // Borrar todos los datos del sessionStorage y el localStorage
  //localStorage.clear();
  //sessionStorage.clear();
+
+ 
